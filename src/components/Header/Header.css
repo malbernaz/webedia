@@ -10,6 +10,11 @@
   text-transform: uppercase;
 }
 
+.Header__top > div {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo {
   text-transform: lowercase;
   font-weight: normal;
@@ -39,4 +44,57 @@
 
 .Header__nav a:hover {
   background: rgba(0, 0, 0, .03);
+}
+
+@media (max-width: 768px) {
+  .Header__top > div {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .Header__nav--toggle {
+    position: relative;
+    background: #ff6f00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .Header__nav--toggle svg {
+    fill: #ffffff;
+    height: 25px;
+  }
+
+  .Header__nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
+    box-shadow: none;
+    background: rgba(255, 111, 0, .9);
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity;
+    z-index: 1;
+    transition: opacity .3s ease-out;
+  }
+
+  .Header__nav--shown {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .Header__nav a {
+    color: #ffffff;
+    font-size: 2em;
+    width: 100%;
+    position: relative;
+  }
 }

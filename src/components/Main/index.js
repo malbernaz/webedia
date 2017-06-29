@@ -19,7 +19,7 @@ const Main = () =>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim elementum
         congue. Aliquam libero lacus, tempor quis magna vitae, sollicitudin mattis augue.
       </h2>
-      <img src={image} />
+      <img src={image} alt="pasta" />
       <div className="Main__jumbo--content">
         <hr />
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -32,12 +32,26 @@ const Main = () =>
     </div>
     <div className="Main__grid">
       {times(2).map(i =>
-        <div className="Main__grid--card">
+        <div className="Main__grid--card" key={`card-${i}`}>
           <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim elementum
             congue.
           </h2>
-          <img src={image} />
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim elementum
+            congue. Aliquam libero lacus, tempor quis magna vitae, sollicitudin mattis augue.
+          </h3>
+          <img src={image} alt="pasta" />
+          <div className="Main__card--content">
+            <hr />
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim
+              elementum congue. Aliquam libero lacus, tempor quis magna vitae, sollicitudin mattis
+              augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim
+              elementum congue.
+            </p>
+          </div>
         </div>
       )}
     </div>
