@@ -42,7 +42,7 @@
 }
 
 .Main__jumbo--content h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 400;
   color: #ff6f00;
 }
@@ -51,4 +51,28 @@
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.5;
+}
+
+.Main__grid {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main__grid--card {
+  background: #ffffff;
+  width: calc(50% - 1rem);
+  padding: 1.5rem;
+}
+
+.Main__grid--card h2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ff6f00;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.Main__grid--card img {
+  width: 100%;
 }

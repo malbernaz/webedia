@@ -30,7 +30,17 @@ const Main = () =>
         </p>
       </div>
     </div>
-    <div className="Main__grid">grid</div>
+    <div className="Main__grid">
+      {times(2).map(i =>
+        <div className="Main__grid--card">
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu leo sed enim elementum
+            congue.
+          </h2>
+          <img src={image} />
+        </div>
+      )}
+    </div>
   </main>;
 
 export default Main;
