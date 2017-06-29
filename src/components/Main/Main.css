@@ -1,0 +1,54 @@
+.Main {
+  width: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.Main__jumbo {
+  background: #ffffff;
+  padding: 1.5rem 1.5rem 3rem;
+}
+
+.Main__jumbo h1,
+.Main__jumbo h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.Main__jumbo h1 {
+  color: #ff6f00;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.Main__jumbo h2 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.Main__jumbo img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.Main__jumbo--content {
+  text-align: center;
+}
+
+.Main__jumbo--content hr {
+  max-width: 200px;
+  border-color: #ff6f00;
+}
+
+.Main__jumbo--content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ff6f00;
+}
+
+.Main__jumbo--content p {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
