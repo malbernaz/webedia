@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'CenturyGothicProCyr';
+  src: url(./static/fonts/30717D_0_0.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothicProCyr';
+  src: url(./static/fonts/30717D_3_0.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'CenturyGothicProCyr', sans-serif;
+  font-size: 15px;
+  background: #f0f0f0;
+}
